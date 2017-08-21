@@ -1,7 +1,7 @@
 var book1 = {
     "id": 1,
     "name": "Harry Potter and the Half-Blood Prince",
-    "author": "J.K. Rowling"
+    "author": "J.K. Rowlings"
     "picture_url": "http://img.timeinc.net/time/2007/harry_potter/107_potter_tout.jpg",
     "price": 20,
     "selling_points": [
