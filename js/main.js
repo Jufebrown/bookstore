@@ -38,7 +38,6 @@ var book3 = {
 }
 
 var music1 = {
-  "id": 1,
   "album name": "18 months"
   "artist": Cavin Harris
   "picture_url": "https://upload.wikimedia.org/wikipedia/en/d/df/Calvin_Harris_-_18_Months.png"
@@ -48,5 +47,18 @@ var music1 = {
     "Summer has never been hotter with jams this sweet"
     "Good vibrations for every occasion"
   ] 
+}
+
+
+var music2 = {
+    "album name": "Anti",
+    "artist": "Rihanna",
+    "picture_url": "https://upload.wikimedia.org/wikipedia/en/3/32/Rihanna_-_Anti.png",
+    "price": 10,
+    "selling_points": [
+        "She's Crazy, Sexy, and Cool",
+        "Unique Sound",
+        "Top Charted Artist"
+    ]
 }
 
