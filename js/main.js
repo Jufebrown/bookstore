@@ -38,9 +38,10 @@ var book3 = {
 }
 
 var music1 = {
+  "id": 1,
   "name": "18 months",
-  "author": "Cavin Harris",
-  "picture_url": "https://upload.wikimedia.org/wikipedia/en/d/df/Calvin_Harris_-_18_Months.png",
+  "author": "Calvin Harris",
+  "picture_url": "https://bethlemondinea2media2014.files.wordpress.com/2014/12/calvin-harris-18-months-album-cover-i9.png",
   "price": 9.99,
   "selling_points": [
     "a life long project from award winning artist DJ Calvin Harris",
@@ -49,6 +50,20 @@ var music1 = {
   ]
 }
 
+
 $('#music1 .name').text(music1.name)
 $('#music1 .author').text(music1.author)
-$('#music1 .product-image img').attr("src='" +music1.picture_url + "'")
+$('#music1 .product-image').append("<img src='" + music1.picture_url + "'>")
+$('#music1 .price').text("Price:" + music1.price)
+
+
+var n = 0
+
+
+
+while(n < music1.selling_points.length) {
+  $('#music1 .feature-list ul').append("<li>" + music1.selling_points[n] + "</li>")
+
+
+n++
+}
