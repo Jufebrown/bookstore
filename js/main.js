@@ -39,7 +39,7 @@ var book3 = {
 
 var music1 = {
   "album name": "18 months",
-  "artist": "Cavin Harris",
+  "artist": "Calvin Harris",
   "picture_url": "https://upload.wikimedia.org/wikipedia/en/d/df/Calvin_Harris_-_18_Months.png",
   "price": 9.99,
   "selling_points": [
@@ -51,8 +51,8 @@ var music1 = {
 
 
 var music2 = {
-    "album name": "Anti",
-    "artist": "Rihanna",
+    "name": "Anti",
+    "author": "Rihanna",
     "picture_url": "https://upload.wikimedia.org/wikipedia/en/3/32/Rihanna_-_Anti.png",
     "price": 10,
     "selling_points": [
@@ -62,6 +62,11 @@ var music2 = {
     ]
 }
 
+
 $('#book1 .name').text(book1.name)
 $('#book1 .author').text(book1.author)
 $('#book1 .picture_image img').attr("src='"+book1.picture_url + "'")
+
+$('#music2 .name').text(music2.name)
+$('#music2 .author').text(music2.author)
+$('#music2 .product-image img').attr("src='" + music2.picture_url + "'")
