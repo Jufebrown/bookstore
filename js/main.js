@@ -1,7 +1,7 @@
 var book1 = {
     "id": 1,
     "name": "Harry Potter and the Half-Blood Prince",
-    "author": "J.K. Rowlings"
+    "author": "J.K. Rowlings",
     "picture_url": "http://img.timeinc.net/time/2007/harry_potter/107_potter_tout.jpg",
     "price": 20,
     "selling_points": [
@@ -14,7 +14,7 @@ var book1 = {
 var book2 = {
     "id": 2,
     "name": "I Can't Make This Up: Life Lessons",
-    "author": "Kevin Hart"
+    "author": "Kevin Hart",
     "picture_url": "http://t2.gstatic.com/images?q=tbn:ANd9GcQ8qJwviyteJwYP0WiKauFKgRaNMugz4KPyli4wv2EdpXWhoBcl",
     "price": 25,
     "selling_points": [
@@ -38,15 +38,15 @@ var book3 = {
 }
 
 var music1 = {
-  "album name": "18 months"
-  "artist": Cavin Harris
-  "picture_url": "https://upload.wikimedia.org/wikipedia/en/d/df/Calvin_Harris_-_18_Months.png"
+  "album name": "18 months",
+  "artist": "Cavin Harris",
+  "picture_url": "https://upload.wikimedia.org/wikipedia/en/d/df/Calvin_Harris_-_18_Months.png",
   "price": 9.99,
   "selling_points": [
-    "a life long project from award winning artist DJ Calvin Harris"
-    "Summer has never been hotter with jams this sweet"
+    "a life long project from award winning artist DJ Calvin Harris",
+    "Summer has never been hotter with jams this sweet",
     "Good vibrations for every occasion"
-  ] 
+  ]
 }
 
 
@@ -62,3 +62,6 @@ var music2 = {
     ]
 }
 
+$('#book3 .name').text(book3.name)
+$('#book3 .author').text(book3.author)
+$('book3.product-image img').attr("src=''" + book3.picture_url + "'")
