@@ -30,7 +30,7 @@ var book3 = {
      "author": "Savvy Coders",
      "picture_url": "http://pngimg.com/uploads/book/book_PNG2111.png",
      "price": 199,
-     "selling-points": [
+     "selling_points": [
        "This book is hardcover",
        "This is a best seller",
        "This book will make you money"
@@ -61,9 +61,23 @@ var n = 0
 
 
 
+$('#book3 .name').text("Name: " + book3.name)
+$('#book3 .author').text("Author: " + book3.author)
+$('#book3 .product-image').append("<img src='" + book3.picture_url + "'>")
+$('#book3 .price').text("Price: " + book3.price)
+
+while (n < book3.selling_points.length) {
+  $('#book3 .feature-list ul').append("<li>" + book3.selling_points[n] + "</li>")
+  n++
+}
+
+$('#music2 .name').text(music2.name)
+$('#music2 .author').text(music2.author)
+$('#music2 .product-image img').attr("src='" + music2.picture_url + "'")
+
+
 while(n < music1.selling_points.length) {
   $('#music1 .feature-list ul').append("<li>" + music1.selling_points[n] + "</li>")
-
-
 n++
 }
+
