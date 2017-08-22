@@ -10,3 +10,15 @@ var book1 = {
         "Ain't no such thing as halfway crooks. -Mob Deep"
     ]
 }
+
+var music1 = {
+"id": 1,
+"album name": "18 months"
+"artist": Cavin Harris
+"picture_url": "https://upload.wikimedia.org/wikipedia/en/d/df/Calvin_Harris_-_18_Months.png"
+"price": 9.99,
+"selling_points": [
+"a life long project from award winning artist DJ Calvin Harris"
+  "Summer has never been hotter with jams this sweet"
+  "Good vibrations for every occasion"
+] }
