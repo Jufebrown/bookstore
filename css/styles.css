@@ -1,14 +1,15 @@
 body {
-    background-color:Blue;
+    background-color:#116466;
     color: white;
 }
 
 div {margin-top: 100px auto:0;
-    }
+    background-color: #D9B08C;
+}
 
 .header{margin-top: 100px;
-  background-color: pink;
-  color: black;
+  background-color: #2C3531;
+  color: #D1E8E2;
 }
 
 .wreckage {
@@ -17,14 +18,17 @@ div {margin-top: 100px auto:0;
   padding:100px;
   border: 2px dotted:pink;
   }
+
 .content{
   float: center;
   width: 70%;
-  background-color: blue;
+  background-color: #116466;
+  color: #D1E8E2
 
 }
 .footer{margin-top: 0;
-  background-color: blue;
+  background-color: #FFCB9A;
+  color: #D1E8E2
   text: .8em;
 }
 
@@ -39,8 +43,8 @@ nav {
   left: 0;
   height: 5em;
   width: 50vw;
-  background-color: white;
-  color: black;
+  background-color: #D1E8E2;
+  color: #2C3531;
 }
 
 .italic{font-style: italic;
