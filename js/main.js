@@ -1,7 +1,7 @@
 var book1 = {
     "id": 1,
-    "name": "Harry Potter: Complete Series",
-    "author": "J.K. Rowlings"
+    "name": "Harry Potter and the Half-Blood Prince",
+    "author": "J.K. Rowlings",
     "picture_url": "http://img.timeinc.net/time/2007/harry_potter/107_potter_tout.jpg",
     "price": 100,
     "selling_points": [
@@ -14,7 +14,7 @@ var book1 = {
 var book2 = {
     "id": 2,
     "name": "I Can't Make This Up: Life Lessons",
-    "author": "Kevin Hart"
+    "author": "Kevin Hart",
     "picture_url": "http://t2.gstatic.com/images?q=tbn:ANd9GcQ8qJwviyteJwYP0WiKauFKgRaNMugz4KPyli4wv2EdpXWhoBcl",
     "price": 25,
     "selling_points": [
@@ -38,21 +38,21 @@ var book3 = {
 }
 
 var music1 = {
-  "album name": "18 months"
-  "artist": Cavin Harris
-  "picture_url": "https://upload.wikimedia.org/wikipedia/en/d/df/Calvin_Harris_-_18_Months.png"
+  "album name": "18 months",
+  "artist": "Calvin Harris",
+  "picture_url": "https://upload.wikimedia.org/wikipedia/en/d/df/Calvin_Harris_-_18_Months.png",
   "price": 9.99,
   "selling_points": [
-    "a life long project from award winning artist DJ Calvin Harris"
-    "Summer has never been hotter with jams this sweet"
+    "a life long project from award winning artist DJ Calvin Harris",
+    "Summer has never been hotter with jams this sweet",
     "Good vibrations for every occasion"
   ]
 }
 
 
 var music2 = {
-    "album name": "Anti",
-    "artist": "Rihanna",
+    "name": "Anti",
+    "author": "Rihanna",
     "picture_url": "https://upload.wikimedia.org/wikipedia/en/3/32/Rihanna_-_Anti.png",
     "price": 10,
     "selling_points": [
@@ -61,3 +61,7 @@ var music2 = {
         "Top Charted Artist"
     ]
 }
+
+$('#music2 .name').text(music2.name)
+$('#music2 .author').text(music2.author)
+$('#music2 .product-image img').attr("src='" + music2.picture_url + "'")
