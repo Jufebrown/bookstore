@@ -24,9 +24,35 @@ var book2 = {
     ]
 }
 
+var book3 = {
+     "id": 3,
+     "name": "Book Three",
+     "author": "Savvy Coders",
+     "picture_url": "http://pngimg.com/uploads/book/book_PNG2111.png",
+     "price": 199,
+     "selling-points": [
+       "This book is hardcover",
+       "This is a best seller",
+       "This book will make you money"
+     ]
+}
+
+var music1 = {
+  "album name": "18 months"
+  "artist": Cavin Harris
+  "picture_url": "https://upload.wikimedia.org/wikipedia/en/d/df/Calvin_Harris_-_18_Months.png"
+  "price": 9.99,
+  "selling_points": [
+    "a life long project from award winning artist DJ Calvin Harris"
+    "Summer has never been hotter with jams this sweet"
+    "Good vibrations for every occasion"
+  ] 
+}
+
+
 var music2 = {
-    "Album Name": "Anti",
-    "Artist": "Rihanna",
+    "album name": "Anti",
+    "artist": "Rihanna",
     "picture_url": "https://upload.wikimedia.org/wikipedia/en/3/32/Rihanna_-_Anti.png",
     "price": 10,
     "selling_points": [
@@ -35,3 +61,4 @@ var music2 = {
         "Top Charted Artist"
     ]
 }
+
