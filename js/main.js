@@ -72,6 +72,7 @@ while (n < book3.selling_points.length) {
 }
 
 
+
 $('#book2 .name').text("Author: " + book2.name)
 $('#book2 .author').text("Artist: " + book2.author)
 $('#book2 .price').text("Price: " + book2.price)
@@ -84,10 +85,16 @@ n++
 
 }
 
-$('#music2 .name').text(music2.name)
-$('#music2 .author').text(music2.author)
-$('#music2 .product-image img').attr("src='" + music2.picture_url + "'")
+$('#music2 .name').text("Name: " + music2.name)
+$('#music2 .author').text("Artist: " + music2.author)
+$('#music2 .product-image').append("<img src='" + music2.picture_url + "'>")
+$('#music2 .price').text("Price: $" + music2.price)
 
+
+while (n < music2.selling_points.length) {
+  $('#music2 .feature-list ul').append("<li>" + music2.selling_points[n] + "</li>")
+  n++
+}
 
 while(n < music1.selling_points.length) {
   $('#music1 .feature-list ul').append("<li>" + music1.selling_points[n] + "</li>")
