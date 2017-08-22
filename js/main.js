@@ -23,3 +23,15 @@ var book2 = {
         "Because Kevin Hart is HILARIOUS"
     ]
 }
+
+var music2 = {
+    "Album Name": "Anti",
+    "Artist": "Rihanna",
+    "picture_url": "https://upload.wikimedia.org/wikipedia/en/3/32/Rihanna_-_Anti.png",
+    "price": 10,
+    "selling_points": [
+        "She's Crazy, Sexy, and Cool",
+        "Unique Sound",
+        "Top Charted Artist"
+    ]
+}
