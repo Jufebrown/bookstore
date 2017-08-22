@@ -65,8 +65,17 @@ var music2 = {
 
 $('#book1 .name').text(book1.name)
 $('#book1 .author').text(book1.author)
-$('#book1 .picture_image img').attr("src='"+book1.picture_url + "'")
+$('#book1 .product-image').append("<img src='" + book1.picture_url + "'>")
+$('#book1 .price').text("Price: $" + book1.price)
+
+var n = 0
+while (n < book1.selling_points.length) {
+  $('#book1 .feature-list ul').append("<li>"+ book1.selling_points[n]+"</li>")
+  n++
+}
+
+
 
 $('#music2 .name').text(music2.name)
 $('#music2 .author').text(music2.author)
-$('#music2 .product-image img').attr("src='" + music2.picture_url + "'")
+$('#music2 .product-image').append("<img src='>" + music2.picture_url + "'>")
