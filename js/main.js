@@ -30,7 +30,7 @@ var book3 = {
      "author": "Savvy Coders",
      "picture_url": "http://pngimg.com/uploads/book/book_PNG2111.png",
      "price": 199,
-     "selling-points": [
+     "selling_points": [
        "This book is hardcover",
        "This is a best seller",
        "This book will make you money"
@@ -39,7 +39,7 @@ var book3 = {
 
 var music1 = {
   "album name": "18 months",
-  "artist": "Cavin Harris",
+  "artist": "Calvin Harris",
   "picture_url": "https://upload.wikimedia.org/wikipedia/en/d/df/Calvin_Harris_-_18_Months.png",
   "price": 9.99,
   "selling_points": [
@@ -51,8 +51,8 @@ var music1 = {
 
 
 var music2 = {
-    "album name": "Anti",
-    "artist": "Rihanna",
+    "name": "Anti",
+    "author": "Rihanna",
     "picture_url": "https://upload.wikimedia.org/wikipedia/en/3/32/Rihanna_-_Anti.png",
     "price": 10,
     "selling_points": [
@@ -62,6 +62,19 @@ var music2 = {
     ]
 }
 
-$('#book3 .name').text(book3.name)
-$('#book3 .author').text(book3.author)
-$('book3.product-image img').attr("src=''" + book3.picture_url + "'")
+
+$('#book3 .name').text("Name: " + book3.name)
+$('#book3 .author').text("Author: " + book3.author)
+$('#book3 .product-image').append("<img src='" + book3.picture_url + "'>")
+$('#book3 .price').text("Price: " + book3.price)
+
+var n = 0
+
+while (n < book3.selling_points.length) {
+  $('#book3 .feature-list ul').append("<li>" + book3.selling_points[n] + "</li>")
+  n++
+}
+
+$('#music2 .name').text(music2.name)
+$('#music2 .author').text(music2.author)
+$('#music2 .product-image img').attr("src='" + music2.picture_url + "'")
