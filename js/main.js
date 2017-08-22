@@ -1,9 +1,9 @@
 var book1 = {
     "id": 1,
-    "name": "Harry Potter and the Half-Blood Prince",
+    "name": "Harry Potter: Complete Series",
     "author": "J.K. Rowlings"
     "picture_url": "http://img.timeinc.net/time/2007/harry_potter/107_potter_tout.jpg",
-    "price": 20,
+    "price": 100,
     "selling_points": [
         "It’s become essentially a rite of passage into the adult world.",
         "The essential guide to wizardry.",
@@ -46,7 +46,7 @@ var music1 = {
     "a life long project from award winning artist DJ Calvin Harris"
     "Summer has never been hotter with jams this sweet"
     "Good vibrations for every occasion"
-  ] 
+  ]
 }
 
 
@@ -61,4 +61,3 @@ var music2 = {
         "Top Charted Artist"
     ]
 }
-
