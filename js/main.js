@@ -3,7 +3,7 @@ var book1 = {
     "name": "Harry Potter and the Half-Blood Prince",
     "author": "J.K. Rowlings",
     "picture_url": "http://img.timeinc.net/time/2007/harry_potter/107_potter_tout.jpg",
-    "price": 20,
+    "price": 100,
     "selling_points": [
         "It’s become essentially a rite of passage into the adult world.",
         "The essential guide to wizardry.",
@@ -15,7 +15,7 @@ var book2 = {
     "id": 2,
     "name": "I Can't Make This Up: Life Lessons",
     "author": "Kevin Hart",
-    "picture_url": "http://t2.gstatic.com/images?q=tbn:ANd9GcQ8qJwviyteJwYP0WiKauFKgRaNMugz4KPyli4wv2EdpXWhoBcl",
+    "picture_url": "https://prodimage.images-bn.com/pimages/9781501155581_p0_v2_s550x406.jpg",
     "price": 25,
     "selling_points": [
         "You like cheese without the corners, in other words you’ll never be a slice. -Kevin Hart",
@@ -71,10 +71,25 @@ while (n < book3.selling_points.length) {
   n++
 }
 
+
+
+$('#book2 .name').text("Author: " + book2.name)
+$('#book2 .author').text("Artist: " + book2.author)
+$('#book2 .price').text("Price: " + book2.price)
+$('#book2 .product-image').append("<img src='" + book2.picture_url + "'>")
+
+var n = 0
+while (n < book2.selling_points.length) {
+$('#book2 .feature-list ul').append("<li>" + book2.selling_points[n] + "</li>")
+n++
+
+}
+
 $('#music2 .name').text("Name: " + music2.name)
 $('#music2 .author').text("Artist: " + music2.author)
 $('#music2 .product-image').append("<img src='" + music2.picture_url + "'>")
 $('#music2 .price').text("Price: $" + music2.price)
+
 
 while (n < music2.selling_points.length) {
   $('#music2 .feature-list ul').append("<li>" + music2.selling_points[n] + "</li>")
