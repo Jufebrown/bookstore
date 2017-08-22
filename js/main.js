@@ -50,55 +50,50 @@ var music1 = {
   ]
 }
 
-
-$('#music1 .name').text(music1.name)
-$('#music1 .author').text(music1.author)
-$('#music1 .product-image').append("<img src='" + music1.picture_url + "'>")
-$('#music1 .price').text("Price:" + music1.price)
-
+var music2 = {
+    "name": "Anti",
+    "author": "Rihanna",
+    "picture_url": "https://upload.wikimedia.org/wikipedia/en/3/32/Rihanna_-_Anti.png",
+    "price": 10,
+    "selling_points": [
+        "She's Crazy, Sexy, and Cool",
+        "Unique Sound",
+        "Top Charted Artist"
+    ]
+}
 
 var n = 0
 
-
-
-$('#book3 .name').text("Name: " + book3.name)
-$('#book3 .author').text("Author: " + book3.author)
-$('#book3 .product-image').append("<img src='" + book3.picture_url + "'>")
-$('#book3 .price').text("Price: " + book3.price)
-
-while (n < book3.selling_points.length) {
-  $('#book3 .feature-list ul').append("<li>" + book3.selling_points[n] + "</li>")
-  n++
-}
-
-
+$('#book1 .name').text("Author: " + book1.name)
+$('#book1 .author').text("Artist: " + book1.author)
+$('#book1 .price').text("Price: " + book1.price)
+$('#book1 .product-image').append("<img src='" + book1.picture_url + "'>")
 
 $('#book2 .name').text("Author: " + book2.name)
 $('#book2 .author').text("Artist: " + book2.author)
 $('#book2 .price').text("Price: " + book2.price)
 $('#book2 .product-image').append("<img src='" + book2.picture_url + "'>")
 
-var n = 0
-while (n < book2.selling_points.length) {
-$('#book2 .feature-list ul').append("<li>" + book2.selling_points[n] + "</li>")
-n++
+$('#book3 .name').text("Name: " + book3.name)
+$('#book3 .author').text("Author: " + book3.author)
+$('#book3 .product-image').append("<img src='" + book3.picture_url + "'>")
+$('#book3 .price').text("Price: " + book3.price)
 
-}
+$('#music1 .name').text(music1.name)
+$('#music1 .author').text(music1.author)
+$('#music1 .product-image').append("<img src='" + music1.picture_url + "'>")
+$('#music1 .price').text("Price:" + music1.price)
 
 $('#music2 .name').text("Name: " + music2.name)
 $('#music2 .author').text("Artist: " + music2.author)
 $('#music2 .product-image').append("<img src='" + music2.picture_url + "'>")
 $('#music2 .price').text("Price: $" + music2.price)
 
-
-while (n < music2.selling_points.length) {
+while (n < book3.selling_points.length) {
+  $('#book1 .feature-list ul').append("<li>" + book1.selling_points[n] + "</li>")
+  $('#book2 .feature-list ul').append("<li>" + book2.selling_points[n] + "</li>")
+  $('#book3 .feature-list ul').append("<li>" + book3.selling_points[n] + "</li>")
+  $('#music1 .feature-list ul').append("<li>" + music1.selling_points[n] + "</li>")
   $('#music2 .feature-list ul').append("<li>" + music2.selling_points[n] + "</li>")
   n++
 }
-
-while(n < music1.selling_points.length) {
-  $('#music1 .feature-list ul').append("<li>" + music1.selling_points[n] + "</li>")
-n++
-}
-
-
