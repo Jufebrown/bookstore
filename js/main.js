@@ -30,7 +30,7 @@ var book3 = {
      "author": "Savvy Coders",
      "picture_url": "http://pngimg.com/uploads/book/book_PNG2111.png",
      "price": 199,
-     "selling-points": [
+     "selling_points": [
        "This book is hardcover",
        "This is a best seller",
        "This book will make you money"
@@ -38,9 +38,10 @@ var book3 = {
 }
 
 var music1 = {
-  "album name": "18 months",
-  "artist": "Calvin Harris",
-  "picture_url": "https://upload.wikimedia.org/wikipedia/en/d/df/Calvin_Harris_-_18_Months.png",
+  "id": 1,
+  "name": "18 months",
+  "author": "Calvin Harris",
+  "picture_url": "https://bethlemondinea2media2014.files.wordpress.com/2014/12/calvin-harris-18-months-album-cover-i9.png",
   "price": 9.99,
   "selling_points": [
     "a life long project from award winning artist DJ Calvin Harris",
@@ -50,16 +51,24 @@ var music1 = {
 }
 
 
-var music2 = {
-    "name": "Anti",
-    "author": "Rihanna",
-    "picture_url": "https://upload.wikimedia.org/wikipedia/en/3/32/Rihanna_-_Anti.png",
-    "price": 10,
-    "selling_points": [
-        "She's Crazy, Sexy, and Cool",
-        "Unique Sound",
-        "Top Charted Artist"
-    ]
+$('#music1 .name').text(music1.name)
+$('#music1 .author').text(music1.author)
+$('#music1 .product-image').append("<img src='" + music1.picture_url + "'>")
+$('#music1 .price').text("Price:" + music1.price)
+
+
+var n = 0
+
+
+
+$('#book3 .name').text("Name: " + book3.name)
+$('#book3 .author').text("Author: " + book3.author)
+$('#book3 .product-image').append("<img src='" + book3.picture_url + "'>")
+$('#book3 .price').text("Price: " + book3.price)
+
+while (n < book3.selling_points.length) {
+  $('#book3 .feature-list ul').append("<li>" + book3.selling_points[n] + "</li>")
+  n++
 }
 
 $('#music2 .name').text("Name: " + music2.name)
@@ -67,11 +76,14 @@ $('#music2 .author').text("Artist: " + music2.author)
 $('#music2 .product-image').append("<img src='" + music2.picture_url + "'>")
 $('#music2 .price').text("Price: $" + music2.price)
 
-var n = 0
-
-
-
 while (n < music2.selling_points.length) {
   $('#music2 .feature-list ul').append("<li>" + music2.selling_points[n] + "</li>")
   n++
 }
+
+while(n < music1.selling_points.length) {
+  $('#music1 .feature-list ul').append("<li>" + music1.selling_points[n] + "</li>")
+n++
+}
+
+
