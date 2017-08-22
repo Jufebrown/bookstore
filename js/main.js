@@ -11,7 +11,6 @@ var book1 = {
     ]
 }
 
-
 var book2 = {
     "id": 2,
     "name": "I Can't Make This Up: Life Lessons",
@@ -36,5 +35,18 @@ var book3 = {
        "This is a best seller",
        "This book will make you money"
      ]
+}
+
+var music1 = {
+  "id": 1,
+  "album name": "18 months"
+  "artist": Cavin Harris
+  "picture_url": "https://upload.wikimedia.org/wikipedia/en/d/df/Calvin_Harris_-_18_Months.png"
+  "price": 9.99,
+  "selling_points": [
+    "a life long project from award winning artist DJ Calvin Harris"
+    "Summer has never been hotter with jams this sweet"
+    "Good vibrations for every occasion"
+  ] 
 }
 
