@@ -11,6 +11,7 @@ var book1 = {
     ]
 }
 
+
 var book2 = {
     "id": 2,
     "name": "I Can't Make This Up: Life Lessons",
@@ -23,3 +24,17 @@ var book2 = {
         "Because Kevin Hart is HILARIOUS"
     ]
 }
+
+var book3 = {
+     "id": 3,
+     "name": "Book Three",
+     "author": "Savvy Coders",
+     "picture_url": "http://pngimg.com/uploads/book/book_PNG2111.png",
+     "price": 199,
+     "selling-points": [
+       "This book is hardcover",
+       "This is a best seller",
+       "This book will make you money"
+     ]
+}
+
