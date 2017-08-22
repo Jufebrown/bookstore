@@ -10,6 +10,21 @@ var book1 = {
         "Ain't no such thing as halfway crooks. -Mob Deep"
     ]
 }
+
+
+var book2 = {
+    "id": 2,
+    "name": "I Can't Make This Up: Life Lessons",
+    "author": "Kevin Hart"
+    "picture_url": "http://t2.gstatic.com/images?q=tbn:ANd9GcQ8qJwviyteJwYP0WiKauFKgRaNMugz4KPyli4wv2EdpXWhoBcl",
+    "price": 25,
+    "selling_points": [
+        "You like cheese without the corners, in other words you’ll never be a slice. -Kevin Hart",
+        "Laughter is Good for the Soul",
+        "Because Kevin Hart is HILARIOUS"
+    ]
+}
+
 var book3 = {
      "id": 3,
      "name": "Book Three",
@@ -22,3 +37,4 @@ var book3 = {
        "This book will make you money"
      ]
 }
+
