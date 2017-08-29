@@ -36,7 +36,7 @@ var products = [
     ]
   },
   {
-    "id": 1,
+    "id": 4,
     "name": "18 months",
     "author": "Calvin Harris",
     "picture_url": "https://bethlemondinea2media2014.files.wordpress.com/2014/12/calvin-harris-18-months-album-cover-i9.png",
@@ -48,6 +48,7 @@ var products = [
     ]
   },
   {
+    "id": 5,
     "name": "Anti",
     "author": "Rihanna",
     "picture_url": "https://upload.wikimedia.org/wikipedia/en/3/32/Rihanna_-_Anti.png",
@@ -68,31 +69,75 @@ var addToPage = function(productObj) {
     .append("<div>Price: " + productObj.price + "</div>")
     .append("<div><img src='" + productObj.picture_url + "'></div>")
     .append("<div class='feature-list'><ul></ul></div>")
-  var n = 0
-  while (n < productObj.selling_points.length) {
-    $('.content .feature-list ul:last').append("<li>" + productObj.selling_points[n] + "</li>")
-    n++
-  }
+
+    // loop over selling points with while
+  // var n = 0
+  // while (n < productObj.selling_points.length) {
+  //   $('.content .feature-list ul:last').append("<li>" + productObj.selling_points[n] + "</li>")
+  //   n++
+  // }
+
+  // loop over selling points with forEach
+  productObj.selling_points.forEach(function(point) {
+    $('.content .feature-list ul:last').append("<li>" + point + "</li>")
+  })
 }
 
-var m = 0
-while (m < products.length) {
-  addToPage(products[m])
-  m++
+// var m = 0
+// while (m < products.length) {
+//   addToPage(products[m])
+//   m++
+// }
+
+var populatePage = function() {
+  products.forEach(function(product) {
+    addToPage(product)
+  })
 }
 
-var count = 2;
+populatePage()
+
+// var count = 2;
+//
+// $("form").on("submit", function(event) {
+//     event.preventDefault();
+//
+//     var data = $(this).serializeArray();
+//     var formObject = {};
+//
+//     formObject.id = ++count;
+//     data.forEach( function(field){
+//         formObject[field.name] = field.value;
+//     } );
+//
+//     addToPage(formObject);
+// });
+
+var formToObject = function(form) {
+  var data = $(form).serializeArray();
+  var formObject = {};
+
+  formObject.id = products.length++; // measures the length of the global products array
+  data.forEach( function(field){
+      formObject[field.name] = field.value;
+  } );
+  return formObject
+}
+
+var emptyContent = function() {
+  $('.content').empty(); // jQuery function that refreshes the #content div
+}
+
+var addFormObjToProducts = function(formObject) {
+  products.push(formObject); // adds the new product to the global products array
+}
+
 
 $("form").on("submit", function(event) {
     event.preventDefault();
-
-    var data = $(this).serializeArray();
-    var formObject = {};
-
-    formObject.id = ++count;
-    data.forEach( function(field){
-        formObject[field.name] = field.value;
-    } );
-
-    addToPage(formObject);
+    
+    var formObject = formToObject(this)
+    emptyContent()
+    addFormObjToProducts(formObject)
+    populatePage()
 });
